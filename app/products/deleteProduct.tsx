@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 type Product = {
   id: number;
   title: string;
-  price: number;
+  desc: string;
 };
 
 export default function DeleteProduct(product: Product) {

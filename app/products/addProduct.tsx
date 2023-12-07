@@ -67,7 +67,7 @@ export default function AddProduct() {
               />
             </div>
             <div className="form-control">
-              <label className="label font-bold">Price</label>
+              <label className="label font-bold">Keterangan</label>
               <input
                 type="text"
                 value={price}

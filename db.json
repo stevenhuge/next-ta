@@ -2,23 +2,72 @@
   "products": [
     {
       "id": 1,
-      "title": "Avanza Hitam",
-      "price": 899
+      "title": "Kampus Mengajar",
+      "desc": "Halo Ridho karunia"
+    },
+    {
+      "title": "Telkom University",
+      "price": "Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet",
+      "id": 2,
+      "desc": "asdwadadwadaadadwad"
+    },
+    {
+      "title": "PT Karya Industri",
+      "price": "Menerima lowongan magang di daerah tawangmangu untuk melakukan proyek besar",
+      "id": 3,
+      "desc": "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet "
+    },
+    {
+      "title": "SMK Negeri 2 Surakarta",
+      "price": "",
+      "id": 4,
+      "desc": "Lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
+    },
+    {
+      "title": "SMK Negeri 5 Surakarta",
+      "price": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
+      "id": 5,
+      "desc": "Lorem ipsum dolor sit amet"
+    },
+    {
+      "title": "PT Bogi",
+      "price": "Sekipan",
+      "id": 6,
+      "desc": "Sekipan"
+    },
+    {
+      "title": "PT Berkah",
+      "price": "",
+      "id": 7,
+      "desc": "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
+    },
+    {
+      "title": "PT Telkomsel Grapari",
+      "price": "",
+      "id": 8,
+      "desc": "Lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
+    }
+  ],
+  "product-era": [
+    {
+      "id": 1,
+      "title": "Study Tour to Singapore",
+      "description": "Lorem ipsum dolor sit amet"
     },
     {
       "id": 2,
-      "title": "Product 2",
-      "price": 456
+      "title": "South Korea is the best ever",
+      "description": "Lorem ipsum dolor sit amet"
     },
     {
-      "title": "Product 3",
-      "price": 374,
-      "id": 5
+      "id": 2,
+      "title": "South Korea is the best ever",
+      "description": "Lorem ipsum dolor sit amet"
     },
     {
-      "title": "Product 4",
-      "price": "123",
-      "id": 6
+      "id": 2,
+      "title": "South Korea is the best ever",
+      "description": "Lorem ipsum dolor sit amet"
     }
   ]
 }
