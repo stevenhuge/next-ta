@@ -25,13 +25,13 @@ const SecondC = async () => {
                     <a href="#">
                         <img
                             className="rounded-t-lg"
-                            src="/docs/images/blog/image-1.jpg"
+                            src="/msib.jpg"
                             alt=""
                         />
                     </a>
                     <div className="p-5">
                         <a href="#">
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-350">
                                 {product.title}
                             </h5>
                         </a>
@@ -39,10 +39,10 @@ const SecondC = async () => {
                             {product.desc}
                         </p>
                         <a
-                            href="#"
+                            href="https://forms.gle/CiBejQFVLPhMyXss7"
                             className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                         >
-                            Read more
+                            Selengkapnya 
                             <svg
                                 className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
                                 aria-hidden="true"

@@ -1,11 +1,11 @@
 "use client";
 
 import { SyntheticEvent, useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/navigation"
 
 export default function AddProduct() {
   const [title, setTitle] = useState("");
-  const [desc, setDesc] = useState("");
+  const [description, setDescription] = useState("");
   const [modal, setModal] = useState(false);
   const [isMutating, setIsMutating] = useState(false);
 
@@ -16,21 +16,21 @@ export default function AddProduct() {
 
     setIsMutating(true);
 
-    await fetch("http://localhost:5000/products", {
+    await fetch("http://localhost:5000/product-era", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
         title: title,
-        desc: desc,
+        description: description,
       }),
     });
 
     setIsMutating(false);
 
     setTitle("");
-    setDesc("");
+    setDescription("");
     router.refresh();
     setModal(false);
   }
@@ -44,7 +44,7 @@ export default function AddProduct() {
       <button className="btn" onClick={handleChange}>
         Add New
       </button>
-
+    
       <input
         type="checkbox"
         checked={modal}
@@ -70,8 +70,8 @@ export default function AddProduct() {
               <label className="label font-bold">Keterangan</label>
               <input
                 type="text"
-                value={desc}
-                onChange={(e) => setDesc(e.target.value)}
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
                 className="input w-full input-bordered"
                 placeholder="Price"
               />

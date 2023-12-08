@@ -2,72 +2,48 @@
   "products": [
     {
       "id": 1,
-      "title": "Kampus Mengajar",
-      "desc": "Halo Ridho karunia"
+      "title": "MSIB",
+      "desc": "Rasakan pengalaman  dunia kerja dengan terjun  langsung melalui  Magang Merdeka"
     },
     {
-      "title": "Telkom University",
-      "price": "Lorem Ipsum Dolor Sit Amet Lorem Ipsum Dolor Sit Amet",
+      "title": "Pertukaran Mahasiswa",
       "id": 2,
-      "desc": "asdwadadwadaadadwad"
+      "desc": "Bertukar pengalaman budaya dengan universitas lain  melalui Pertukaran  Mahasiswa dalam negeri"
     },
     {
-      "title": "PT Karya Industri",
-      "price": "Menerima lowongan magang di daerah tawangmangu untuk melakukan proyek besar",
+      "title": "Kampus Mengajar",
       "id": 3,
-      "desc": "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet "
+      "desc": "Bantu tingkatkan kualitas  pengajaran pendidikan  dasar melalui Kampus Mengajar"
     },
     {
-      "title": "SMK Negeri 2 Surakarta",
-      "price": "",
-      "id": 4,
-      "desc": "Lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
-    },
-    {
-      "title": "SMK Negeri 5 Surakarta",
-      "price": "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet",
-      "id": 5,
-      "desc": "Lorem ipsum dolor sit amet"
-    },
-    {
-      "title": "PT Bogi",
-      "price": "Sekipan",
-      "id": 6,
-      "desc": "Sekipan"
-    },
-    {
-      "title": "PT Berkah",
-      "price": "",
-      "id": 7,
-      "desc": "lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
-    },
-    {
-      "title": "PT Telkomsel Grapari",
-      "price": "",
-      "id": 8,
-      "desc": "Lorem ipsum dolor sit amet lorem ipsum dolor sit amet"
+      "title": "iisma",
+      "desc": "Perluas wawasan dan koneksi melalui Pertukaran Mahasiswa secara Internasional",
+      "id": 4
     }
   ],
   "product-era": [
     {
-      "id": 1,
-      "title": "Study Tour to Singapore",
-      "description": "Lorem ipsum dolor sit amet"
+      "title": "Pertanyaan 1",
+      "description": "Bagaimana cara registrasi akun Magang Online ?",
+      "id": 1
     },
     {
-      "id": 2,
-      "title": "South Korea is the best ever",
-      "description": "Lorem ipsum dolor sit amet"
+      "title": "Pertanyaan 2",
+      "description": "Apakah bisa mendaftar lebih dari 1 program ?",
+      "id": 2
     },
     {
-      "id": 2,
-      "title": "South Korea is the best ever",
-      "description": "Lorem ipsum dolor sit amet"
+      "title": "Pertanyaan 3",
+      "description": "Apa saja syarat untuk mendaftar program ini ?",
+      "id": 3
     },
     {
-      "id": 2,
-      "title": "South Korea is the best ever",
-      "description": "Lorem ipsum dolor sit amet"
+      "title": "Pertanyaan 4",
+      "description": "Bagaimana cara verifikasi Nomor Induk Siswa Nasional (NISN)",
+      "id": 4
     }
-  ]
+  ],
+  "deploys": {
+    "images": []
+  }
 }

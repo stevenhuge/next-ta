@@ -4,6 +4,7 @@ import Content from "../components/content";
 import Link from "next/link";
 import SecondC from "../components/secondContent";
 import ThirdC from "../components/thirdContent";
+import Footer from "../components/footer";
 
 export const metadata = {
     title: "Magang Online",
@@ -26,7 +27,7 @@ const userpage = () => {
         </div>
         </div>
         <div style={content2}>
-            <p className="mt-7 ml-3" style={{ color: 'white', }}>Program Unggulan</p>
+            <p className="mt-7 ml-3 text-gray-450">Program Unggulan</p>
         </div>
         <div style={content3}>
         <SecondC/>
@@ -34,14 +35,19 @@ const userpage = () => {
         <div style={pages}>
         <ThirdC />
         </div>
+        <div style={footer}>
+            <Footer/>
+        </div>
        
         </>
     )
 }
 
-
+    const footer = {
+        backgroundColor: '#2A303C',
+    }
     const content3 = {
-        padding: '14px'
+        padding: '14px',
     }
     const content2 = {
         height: '10rem',

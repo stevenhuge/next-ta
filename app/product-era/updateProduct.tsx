@@ -3,34 +3,38 @@
 import { SyntheticEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 
-export default function AddProduct() {
-  const [title, setTitle] = useState("");
-  const [desc, setDesc] = useState("");
+type Product = {
+  id: number;
+  title: string;
+  description: string;
+};
+
+export default function UpdateProduct(product: Product) {
+  const [title, setTitle] = useState(product.title);
+  const [description, setDescription] = useState(product.description);
   const [modal, setModal] = useState(false);
   const [isMutating, setIsMutating] = useState(false);
 
   const router = useRouter();
 
-  async function handleSubmit(e: SyntheticEvent) {
+  async function handleUpdate(e: SyntheticEvent) {
     e.preventDefault();
 
     setIsMutating(true);
 
-    await fetch("http://localhost:5000/products", {
-      method: "POST",
+    await fetch(`http://localhost:5000/product-era/${product.id}`, {
+      method: "PATCH",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
         title: title,
-        desc: desc,
+        description: description,
       }),
     });
 
     setIsMutating(false);
 
-    setTitle("");
-    setDesc("");
     router.refresh();
     setModal(false);
   }
@@ -41,8 +45,8 @@ export default function AddProduct() {
 
   return (
     <div>
-      <button className="btn" onClick={handleChange}>
-        Add New
+      <button className="btn btn-info btn-sm" onClick={handleChange}>
+        Edit
       </button>
 
       <input
@@ -54,8 +58,8 @@ export default function AddProduct() {
 
       <div className="modal">
         <div className="modal-box">
-          <h3 className="font-bold text-lg">Add New Product</h3>
-          <form onSubmit={handleSubmit}>
+          <h3 className="font-bold text-lg">Edit {product.title}</h3>
+          <form onSubmit={handleUpdate}>
             <div className="form-control">
               <label className="label font-bold">Title</label>
               <input
@@ -67,11 +71,11 @@ export default function AddProduct() {
               />
             </div>
             <div className="form-control">
-              <label className="label font-bold">Keterangan</label>
+              <label className="label font-bold">Price</label>
               <input
                 type="text"
-                value={desc}
-                onChange={(e) => setDesc(e.target.value)}
+                value={description}
+                onChange={(e) => setDescription(String(e.target.value))}
                 className="input w-full input-bordered"
                 placeholder="Price"
               />
@@ -82,11 +86,11 @@ export default function AddProduct() {
               </button>
               {!isMutating ? (
                 <button type="submit" className="btn btn-primary">
-                  Save
+                  Update
                 </button>
               ) : (
                 <button type="button" className="btn loading">
-                  Saving...
+                  Updating...
                 </button>
               )}
             </div>

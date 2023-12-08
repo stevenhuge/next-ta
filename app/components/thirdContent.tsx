@@ -89,6 +89,8 @@ const child = {
 };
 const content = {
   borderRadius: "10px",
+  opacity: '70%',
+  marginTop: '2rem',
 };
 const subtext = {
   fontSize: "45px",
