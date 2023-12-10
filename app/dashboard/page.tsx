@@ -10,7 +10,7 @@ export const metadata = {
     title: "Magang Online",
 };
 
-const userpage = () => {
+const dashboard = () => {
     return (
         <>
 
@@ -18,16 +18,16 @@ const userpage = () => {
         <div style={content}>
         <p style={text}>Ambil Kendali</p><br />
         <p style={text}>Masa Depanmu</p><br />
-        <p>Kampus Merdeka adalah cara terbaik berkuliah. <br />
+        <p>LES SINDO adalah cara terbaik untuk menentukan karir <br />
         Dapatkan kemerdekaan untuk membentuk masa depan yang  <br />
         sesuai dengan aspirasi kariermu.</p>
         <div className="flex flex-col lg:flex-row mt-5">
         <button className="mt-5 lg:mt-0" style={buttonLeft}><Link href="/detail">Telusuri Program</Link></button>
-        <button className="mt-5 lg:mt-0 ml-0 lg:ml-5" style={buttonRight}>Telusuri Program</button>
+        <button className="mt-5 lg:mt-0 ml-0 lg:ml-5" style={buttonRight}>Cek Persyaratan Umum</button>
         </div>
         </div>
         <div style={content2}>
-            <p className="mt-7 ml-3 text-gray-450">Program Unggulan</p>
+            <p className="mt-7 ml-3 text-gray-450">Program Belajar </p>
         </div>
         <div style={content3}>
         <SecondC/>
@@ -78,7 +78,7 @@ const userpage = () => {
         height: 'auto',
         padding: '124px',
         backgroundImage: 'url("/react1.jpg")',
-        opacity: '50%',
+        opacity: '70%',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundColor: 'white'
@@ -95,4 +95,4 @@ const userpage = () => {
         backgroundColor: '#1F2937',
     }
 
-export default userpage;
+export default dashboard;

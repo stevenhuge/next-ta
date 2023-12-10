@@ -2,22 +2,22 @@
   "products": [
     {
       "id": 1,
-      "title": "MSIB",
-      "desc": "Rasakan pengalaman  dunia kerja dengan terjun  langsung melalui  Magang Merdeka"
+      "title": "Bahasa Indonesia",
+      "desc": "Mempelajari penggunaan dan penempatan bahasa indonesia dengan lisan yang bijak dan cermat"
     },
     {
-      "title": "Pertukaran Mahasiswa",
+      "title": "Matematika",
       "id": 2,
-      "desc": "Bertukar pengalaman budaya dengan universitas lain  melalui Pertukaran  Mahasiswa dalam negeri"
+      "desc": "Memahami lebih dalam tentang himpunan, aljabar, dan peluang dengan ringkas dan cepat"
     },
     {
-      "title": "Kampus Mengajar",
+      "title": "Bahasa Jepang",
       "id": 3,
-      "desc": "Bantu tingkatkan kualitas  pengajaran pendidikan  dasar melalui Kampus Mengajar"
+      "desc": "Mempelajari aksara jepang dan penggunaan dari hiragana, katakana, dan kanji"
     },
     {
-      "title": "iisma",
-      "desc": "Perluas wawasan dan koneksi melalui Pertukaran Mahasiswa secara Internasional",
+      "title": "Fisika",
+      "desc": "Mempelajari rumus rumus fisika dari awal munculnya fisika di bumi ini lebih dalam",
       "id": 4
     }
   ],

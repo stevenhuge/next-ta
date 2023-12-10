@@ -32,7 +32,6 @@ export default async function ProductList() {
       <div className="py-2">
         <AddProduct />
       </div>
-      <h3 className="mt-5">TABEL SISTEM MAGANG</h3>
       <table className="table w-full mt-10">
         <thead>
           <tr>

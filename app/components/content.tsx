@@ -21,9 +21,7 @@ const Content = async () => {
   const product: Product[] = await getProducts();
   return (
     <>
-      <p className="mt-3 ml-5 text-center" style={judul}>
-        DAFTAR PILIHAN LAYANAN MAGANG UNTUK MAHASISWA
-      </p>
+
       <center>
         {/* <table  className="w-full table mt-10 me-2">
         <thead>
@@ -58,7 +56,7 @@ const Content = async () => {
             <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
               <tr>
                 <th scope="col" className="px-6 py-3 text-center" colSpan={5}>
-                  Product name
+                  TABEL PROGRAM PEMBELAJARAN
                 </th>
               </tr>
             </thead>

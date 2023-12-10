@@ -25,7 +25,7 @@ const SecondC = async () => {
                     <a href="#">
                         <img
                             className="rounded-t-lg"
-                            src="/msib.jpg"
+                            src="/buku.jpg"
                             alt=""
                         />
                     </a>

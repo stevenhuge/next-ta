@@ -21,15 +21,14 @@ const ThirdC = async () => {
         <div>
           {/* Teks di sebelah kiri */}
           <p className="font-bold" style={subtext}>
-            Kampus Merdeka
+            LES SINDO
           </p>
           <p className="text-gray-500 font-semibold" style={text}>
-            Program persiapan karier yang komprehensif untuk mempersiapkan
-            generasi terbaik Indonesia
+            Program persiapan karier yang komprehensif untuk mempersiapkan generasi terbaik Indonesia
           </p>
           <br />
           <p className="text-gray-500" style={text}>
-            Kampus Merdeka adalah bagian dari kebijakan Merdeka Belajar <br />
+            LES SINDO adalah bagian dari kebijakan Merdeka Belajar <br />
             oleh Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi <br />
             (Kemendikbudristek) yang memberikan seluruh mahasiswa kesempatan{" "}
             <br /> untuk mengasah kemampuan sesuai bakat dan minat dengan terjun{" "}
