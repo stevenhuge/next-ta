@@ -7,11 +7,13 @@ type Product = {
   id: number;
   title: string;
   desc: string;
+  price: number;
 };
 
 export default function UpdateProduct(product: Product) {
   const [title, setTitle] = useState(product.title);
   const [desc, setDesc] = useState(product.desc);
+  const [price, setPrice] = useState(product.price);
   const [modal, setModal] = useState(false);
   const [isMutating, setIsMutating] = useState(false);
 
@@ -22,7 +24,7 @@ export default function UpdateProduct(product: Product) {
 
     setIsMutating(true);
 
-    await fetch(`http://localhost:5000/products/${product.id}`, {
+    await fetch(`http://localhost:5100/products/${product.id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -30,6 +32,7 @@ export default function UpdateProduct(product: Product) {
       body: JSON.stringify({
         title: title,
         desc: desc,
+        price: price,
       }),
     });
 
@@ -71,11 +74,21 @@ export default function UpdateProduct(product: Product) {
               />
             </div>
             <div className="form-control">
-              <label className="label font-bold">Price</label>
+              <label className="label font-bold">Keterangan</label>
               <input
                 type="text"
                 value={desc}
                 onChange={(e) => setDesc(String(e.target.value))}
+                className="input w-full input-bordered"
+                placeholder="Price"
+              />
+            </div>
+            <div className="form-control">
+              <label className="label font-bold">Price</label>
+              <input
+                type="text"
+                value={price}
+                onChange={(e) => setPrice(Number(e.target.value))}
                 className="input w-full input-bordered"
                 placeholder="Price"
               />

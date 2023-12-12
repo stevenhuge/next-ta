@@ -16,7 +16,7 @@ type Product = {
 
 
 async function getProducts() {
-  const res = await fetch("http://localhost:5000/product-era", {
+  const res = await fetch("http://localhost:5100/product-era", {
     cache: "no-store",
   });
   return res.json();
@@ -32,7 +32,6 @@ export default async function ProductList() {
       <div className="py-2">
         <AddProductEra />
       </div>
-      <h3 className="mt-5">TABEL SISTEM MAGANG</h3>
       <table className="table w-full mt-10">
         <thead>
           <tr>

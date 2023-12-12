@@ -18,7 +18,7 @@ export default function DeleteEra(product: ProductEra) {
   async function handleDelete(productId: number) {
     setIsMutating(true);
 
-    await fetch(`http://localhost:5000/product-era/${productId}`, {
+    await fetch(`http://localhost:5100/product-era/${productId}`, {
       method: "DELETE",
     });
 

@@ -2,6 +2,7 @@
 
 import { SyntheticEvent, useState } from "react";
 import { useRouter } from "next/navigation"
+import Link from "next/link";
 
 export default function AddProduct() {
   const [title, setTitle] = useState("");
@@ -16,7 +17,7 @@ export default function AddProduct() {
 
     setIsMutating(true);
 
-    await fetch("http://localhost:5000/product-era", {
+    await fetch("http://localhost:5100/product-era", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -93,6 +94,22 @@ export default function AddProduct() {
           </form>
         </div>
       </div>
+      <Link href="/products">
+        <button className="btn mt-5 btn-info flex items-center">
+  PINDAH TABEL PEMBELAJARAN 
+  <span className="ml-2" role="img" aria-label="right-arrow">
+    ➔
+  </span>
+</button>
+
+        </Link> 
+        <h3 className="mt-5 form-control text-center px-5 py-5 rounded" style={sub}>TABEL KOMENTAR</h3>
+
     </div>
   );
+}
+
+const sub = {
+  backgroundColor: '#4F4557',
+  fontSize: '25px'
 }

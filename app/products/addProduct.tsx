@@ -3,10 +3,12 @@
 import { SyntheticEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { setPriority } from "os";
 
 export default function AddProduct() {
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
+  const [price, setPrice] = useState("");
   const [modal, setModal] = useState(false);
   const [isMutating, setIsMutating] = useState(false);
 
@@ -17,7 +19,7 @@ export default function AddProduct() {
 
     setIsMutating(true);
 
-    await fetch("http://localhost:5000/products", {
+    await fetch("http://localhost:5100/products", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -25,6 +27,7 @@ export default function AddProduct() {
       body: JSON.stringify({
         title: title,
         desc: desc,
+        price: price,
       }),
     });
 
@@ -32,6 +35,7 @@ export default function AddProduct() {
 
     setTitle("");
     setDesc("");
+    setPrice("");
     router.refresh();
     setModal(false);
   }
@@ -74,6 +78,16 @@ export default function AddProduct() {
                 type="text"
                 value={desc}
                 onChange={(e) => setDesc(e.target.value)}
+                className="input w-full input-bordered"
+                placeholder="Keterangan"
+              />
+            </div>
+            <div className="form-control">
+              <label className="label font-bold">Harga</label>
+              <input
+                type="text"
+                value={price}
+                onChange={(e) => setPrice(e.target.value)}
                 className="input w-full input-bordered"
                 placeholder="Price"
               />

@@ -7,7 +7,7 @@ type Comment = {
 };
 
 async function getComment() {
-  const res = await fetch("http://localhost:5000/product-era", {
+  const res = await fetch("http://localhost:5100/product-era", {
     cache: "no-store",
   });
   return res.json();

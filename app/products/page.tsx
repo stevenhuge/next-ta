@@ -11,12 +11,12 @@ type Product = {
   id: number;
   title: string;
   desc: string;
-  image: string;
+  price: number;
 };
 
 
 async function getProducts() {
-  const res = await fetch("http://localhost:5000/products", {
+  const res = await fetch("http://localhost:5100/products", {
     cache: "no-store",
   });
   return res.json();
@@ -38,6 +38,7 @@ export default async function ProductList() {
             <th>#</th>
             <th>NAMA PERUSAHAAN</th>
             <th>KETERANGAN</th>
+            <th>Harga</th>
             <th>Actions</th>
           </tr>
         </thead>
@@ -47,6 +48,7 @@ export default async function ProductList() {
               <td>{index + 1}</td>
               <td>{product.title}</td>
               <td className="whitespace-normal">{product.desc}</td>
+              <td className="whitespace-normal">{product.price}</td>
               <td className="flex whitespace-normal">
                 <div className="mr-1">
                   <UpdateProduct {...product} />

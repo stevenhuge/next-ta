@@ -7,10 +7,11 @@ type Product = {
     id: number;
     title: string;
     desc: string;
+    price: number;
 };
 
 async function getProducts() {
-    const res = await fetch("http://localhost:5000/products", {
+    const res = await fetch("http://localhost:5100/products", {
         cache: "no-store",
     });
     return res.json();
@@ -35,11 +36,11 @@ const SecondC = async () => {
                                 {product.title}
                             </h5>
                         </a>
-                        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                            {product.desc}
+                        <p className="mb-3 font-normal text-gray-700" style={{ color: '#D2DE32' }}>
+                            {product.price}
                         </p>
                         <a
-                            href="https://forms.gle/CiBejQFVLPhMyXss7"
+                            href="/detail"
                             className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                         >
                             Selengkapnya 

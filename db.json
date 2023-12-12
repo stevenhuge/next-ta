@@ -3,28 +3,38 @@
     {
       "id": 1,
       "title": "Bahasa Indonesia",
-      "desc": "Mempelajari penggunaan dan penempatan bahasa indonesia dengan lisan yang bijak dan cermat"
+      "desc": "Mempelajari penggunaan dan penempatan bahasa indonesia dengan lisan yang bijak dan cermat",
+      "price": 500000
     },
     {
       "title": "Matematika",
       "id": 2,
-      "desc": "Memahami lebih dalam tentang himpunan, aljabar, dan peluang dengan ringkas dan cepat"
+      "desc": "Memahami lebih dalam tentang himpunan, aljabar, dan peluang dengan ringkas dan cepat",
+      "price": 250000
     },
     {
       "title": "Bahasa Jepang",
       "id": 3,
-      "desc": "Mempelajari aksara jepang dan penggunaan dari hiragana, katakana, dan kanji"
+      "desc": "Mempelajari aksara jepang dan penggunaan dari hiragana, katakana, dan kanji",
+      "price": 750000
     },
     {
       "title": "Fisika",
       "desc": "Mempelajari rumus rumus fisika dari awal munculnya fisika di bumi ini lebih dalam",
-      "id": 4
+      "id": 4,
+      "price": 850000
+    },
+    {
+      "title": "Coding pake ACER",
+      "desc": "minimal kendaraannya vario 160juta sese",
+      "price": "75000",
+      "id": 5
     }
   ],
   "product-era": [
     {
       "title": "Pertanyaan 1",
-      "description": "Bagaimana cara registrasi akun Magang Online ?",
+      "description": "Bagaimana cara registrasi akun LES SINDO ?",
       "id": 1
     },
     {
@@ -41,6 +51,11 @@
       "title": "Pertanyaan 4",
       "description": "Bagaimana cara verifikasi Nomor Induk Siswa Nasional (NISN)",
       "id": 4
+    },
+    {
+      "title": "pertanyaan",
+      "description": "bagaimana cara regiser?",
+      "id": 5
     }
   ],
   "deploys": {

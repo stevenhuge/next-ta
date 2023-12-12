@@ -12,23 +12,18 @@ const Navbar: React.FC = () => {
         </div>
         <div className="flex space-x-4">
           <Link href="/about" legacyBehavior>
-            <a className="text-white">About</a>
+            <a className="text-white">Kontak</a>
           </Link>
           <Link href="/" legacyBehavior>
             <a className="text-white">Tentang Kami</a>
           </Link>
           <div className="group relative">
+            <Link href="/login">
             <button className="text-white focus:outline-none">
-              Services
+              Login
             </button>
-            <div className="hidden group-hover:block absolute bg-gray-700 p-2 mt-2 space-y-2">
-              <Link href="/services/service1" legacyBehavior>
-                <a className="block text-white">Service 1</a>
-              </Link>
-              <Link href="/services/service2" legacyBehavior>
-                <a className="block text-white">Service 2</a>
-              </Link>
-            </div>
+            </Link>
+           
           </div>
         </div>
       </div>
